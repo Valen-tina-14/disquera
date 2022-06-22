@@ -1,0 +1,35 @@
+* {font-family: Helvetica Neue, Arial, sans-serif; }
+
+body { background-image: linear-gradient(#C5796D(247, 243, 243) 25%, #DBE6F6);}
+
+h1, table { text-align: center; }
+
+table {border-collapse: collapse;  width: 70%; margin: 0 auto 5rem;}
+
+th, td { padding: 1.5rem; font-size: 1.3rem; }
+
+tr 
+{
+    background: #C5796D(182, 176, 176); 
+    font-weight: 2rem;
+}
+
+tr, td { transition: .4s ease-in; } 
+
+tr:first-child {background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  }
+
+tr:nth-child(even) { background: #C5796D; }
+
+td:empty {background: #C5796D(50, 25%, 60%, 0.7); }
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: white; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 700; box-shadow: 0px 3px 7px #C5796D,(252, 251, 251, 0.5);}
+
+.tabla
+{
+    background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
